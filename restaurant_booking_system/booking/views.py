@@ -4,6 +4,9 @@ from .forms import ReservationForm
 from .models import Reservation, Restaurant
 
 # Function-based view
+def home(request):
+    return render(request, 'booking/home.html')
+    
 def restaurant_list(request):
     # Retrieve a list of available restaurants
     restaurants = Restaurant.objects.all()
@@ -34,4 +37,6 @@ class ReservationSuccessView(View):
     def get(self, request):
         return render(request, 'booking/reservation_success.html')
 
+class MyView(TemplateView):
+    template_name = 'booking/home.html'
 
