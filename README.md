@@ -2,7 +2,6 @@
 
 Plutos pizzeria is a web application that allows users to make reservations at a restaurant. It provides an intuitive interface for customers to view available tables, select a date and time, view the menu, book their reservation and pay online.
 
-![terminal](assets/images/pic1.png)
 
 ## UX:
 
